@@ -1,0 +1,270 @@
+*{
+    box-sizing: border-box;
+}
+
+body {
+    background-image: url(../images/bg-body.png);
+    font-family: sans-serif;
+}
+
+img.logo {
+    border: 1.5px solid gray;
+    border-radius: 50%;
+    display: block;
+    margin: 0 auto;
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
+
+header span.fa {
+    background-color: gray;
+    color:white;
+    padding: 15px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    position: relative;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.main-nav ul{
+    list-style-type: none;
+    padding-left:0;
+    display: none;
+    font-size: small;
+}
+
+.main-nav:hover ul{
+    display: block;
+}
+
+
+.main-nav li{
+    background-color: gray;
+    margin-bottom: 2px;
+    padding: 15px 0;
+    text-align: center ;
+    text-transform: uppercase;
+}
+
+.main-nav ul li a {
+    color: white;
+    text-decoration: none;
+}
+
+.banner img{
+    display: none;
+}
+
+
+section.vip-products article{
+    width:100%;
+    margin-bottom: 35px;
+}
+
+section.vip-products .photo{
+    width:100%;
+}
+
+
+div.photo-container {
+    position: relative;
+}
+
+
+.special {
+    position: absolute;
+    top: 0;
+    right: 20px;
+}
+
+.zoom {
+    position: absolute;
+    top: 50%;
+    transform: translatey(-50%);
+    width: 100%;
+    text-decoration: none;
+    text-align: center;
+    color: white;
+    font-size: 20px;
+    font-weight: bold;
+    background-color: #00000080;
+    padding: 5px;
+    text-transform: uppercase;
+}
+
+.product p {
+    color:gray;
+}
+
+.product .more {
+    background-color: #272727;
+    text-decoration: none;
+    color: white;
+    padding: 10px;
+}
+
+.separador{
+    display: none;
+}
+
+.main-footer ul{
+    list-style-type: none;
+    padding-left:0;
+}
+
+
+.main-footer li{
+    background-color: red;
+    margin-bottom: 2px;
+    text-align: center ;
+}
+
+.main-footer ul li a {
+    color: white;
+    text-decoration: none;
+    font-size:15px;
+}
+
+
+
+@media (min-width:460px) and (max-width:760px) {
+
+
+    body {
+        width: 100%;
+        margin: 0 auto;
+    }
+    
+    /************CABEZERA**************/
+
+    .toggle-nav{
+        display: none;
+    }
+
+    .main-nav ul {
+        display: block;
+        overflow: hidden;
+        font-size: x-small;
+    }
+    .main-nav ul li {
+        float:left;
+        width: 15%;
+        margin-right: 2%;
+    }
+
+    .main-nav ul li:last-child {
+        margin-right: 0;
+    }
+    
+    /************BANNER**************/
+
+    .banner img{
+        display: block;
+        width: 100%;
+        margin-bottom: 30px;
+    } 
+
+    /************PRODUCTOS**************/
+    
+    section.vip-products{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+    }
+    
+
+    section.vip-products article.product {
+        width: 48%;    
+    }  
+}
+
+
+@media (min-width: 768px){
+    body {
+        width: 80%;
+        margin: 0 auto;
+    }
+
+    .toggle-nav{
+        display: none;
+    }
+
+    
+    .main-nav ul {
+        display: block;
+        overflow: hidden;
+    }
+    .main-nav ul li {
+        float:left;
+        width: 15%;
+        margin-right: 2%;
+    }
+
+    .main-nav ul li:last-child {
+        margin-right: 0;
+    }
+    
+    /*
+    .main-nav ul {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        
+    }
+    .main-nav ul li {
+        width: 12.5%;
+    }
+    */
+
+    .banner img{
+        display: block;
+        width: 100%;
+        margin-bottom: 10px;
+    }
+ 
+    /*
+    section.vip-products article{
+        overflow: hidden;
+    }
+    
+   
+    section.vip-products article.product {
+        float: left;
+        width: 30%;
+        margin-right: 5%;
+    }
+    
+    section.vip-products article.product:nth-child(3n) {
+        margin-right: 0;
+    } */
+    
+    section.vip-products{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+    }
+    
+    section.vip-products article.product {
+        width: 30%;   
+    }
+
+    .separador{
+        display: inline;
+        margin: 0 3px;
+        color: white;
+    }
+
+    .main-footer{
+        background-color: red;
+    }
+
+    .main-footer ul {
+        display: flex;
+        flex-wrap: wrap;
+        height: 100px;
+        justify-content: center;
+        align-content: center;
+    }
+
+}

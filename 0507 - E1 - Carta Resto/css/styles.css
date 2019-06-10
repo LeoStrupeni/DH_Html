@@ -1,0 +1,137 @@
+body {
+    width:960px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+header {
+    border-bottom: solid 1px;
+    padding-bottom: 20px;
+    margin: 20px;
+}
+
+#seccionCentral {
+    overflow: hidden;   
+}
+
+nav {
+    float: left;
+    width: 300px;
+    
+}
+
+.navegacion .menuNav {
+    color: gray;
+    cursor: pointer;
+    text-decoration: none;
+    font:message-box;
+    font-size: 20px;
+}
+
+.navegacion ul li {
+    margin-bottom: 10px;
+    font-size: 30px;
+}
+
+
+main {
+    float: right;
+    width: 610px;
+    border-left: solid 1px;
+    padding: 20px;
+}
+
+.navegacion ul {
+    list-style-type: none;
+    margin-left: 20px;
+    margin-bottom: 50px;
+}
+
+main ul {
+    list-style-type: none;
+    margin-left: -20px;
+}
+
+ul .principal {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font: bold 1em black;
+}
+
+main img {
+    float: right;
+}
+
+footer {
+    background-color: grey;
+    overflow: hidden;
+    margin: 10px;
+    padding: 20px;
+}
+footer img {
+    float: left;
+    height: 100px;
+    padding-top: 25px;
+    padding-left: 30px;
+}
+
+.listadoFooter {
+    float: right;
+    padding-right: 20px;
+    text-align: right;
+    list-style-type: none;
+}
+
+.menuPrincipal{
+    color: white;
+    cursor: pointer;
+    text-decoration: none;
+    font-size: 30px;
+    font:message-box;
+  }
+
+.formulario {
+    margin: 0 auto;
+    overflow: hidden;
+    width: 600px;
+    background-image: url("../img/logo.png") ;
+    background-repeat: no-repeat;
+    background-position: top;
+    background-position-y: 130px;
+    background-size: 400px;
+    background-color: #DFDFDF ;
+    border: solid 2px black;
+}
+
+
+form {
+    font-family: Arial, Helvetica, sans-serif;
+    border: 10px;
+    margin-left: 10px;
+    padding: 10px;
+}
+
+form button {
+    width: 200px;
+    height: 25px;
+    background-color: grey;
+    border: 1px;
+    border-radius: 10px;
+    -moz-box-shadow: 1px 1px 1px 1px rgb(0, 105, 202);
+    -webkit-box-shadow: 1px 1px 1px 1px rgb(0, 105, 202);
+    box-shadow: 1px 1px 1px 1px rgb(0, 105, 202);
+    margin: 10px;
+}
+
+#deDondeSos {
+    width: 300px;
+}
+
+#nombre {
+    width: 300px;   
+}
+
+#email {
+    width: 317px;   
+}
+
+label {
+    font: bold;
+}

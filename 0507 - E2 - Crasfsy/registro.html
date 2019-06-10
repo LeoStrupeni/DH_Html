@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Registro</title>
+    <link href="https://fonts.googleapis.com/css?family=Rubik" rel="stylesheet">
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+
+<body>
+    <div class="header">
+        <div class="col f-l">
+            <img src="img/logo.png" alt="logo" class="img" />
+        </div>
+        <div class="col f-l">
+            <a href="#smartphone">Smartphone</a>
+        </div>
+        <div class="col f-l">
+            <a href="#tablet">Tablets</a>
+        </div>
+        <div class="col f-l">
+            <a href="#Computadoras">Computadoras</a>
+        </div>
+
+        <div class="col f-r">
+            <a href="Login.html">Login</a>
+        </div>
+        <div class="col f-r">
+            <a href="Registro.html">Registro</a>
+        </div>
+    </div>
+    <div>
+        <form action="login.html" class="mainLogin">
+            <p>
+                <label for="" class="bienvenida">Registrate</label>
+            </p>
+            <p>
+                <label for="nombre">Nombre</label>
+                <br>
+                <input id="nombre" type="text" name="nombre" placeholder="Ingrese su Nombre aqui" class="input"
+                    required>
+                <br>
+                <label for="" class="obligatorio">Obligatorio</label>
+            </p>
+            <p>
+                <label for="email">Email</label>
+                <br>
+                <input id="email" type="email" name="email" placeholder="Ingrese su Email aqui" class="input" required>
+                <br>
+                <label for="" class="obligatorio">Obligatorio</label>
+            </p>
+            <p>
+                <label for="pass">Contraseña</label>
+                <br>
+                <input id="pass" type="password" name="password" placeholder="Password" class="input" required>
+                <br>
+                <label for="" class="obligatorio">Obligatorio</label>
+            </p>
+            <p>
+                <label for="pais" Class="tituloh3">Pais de Nacimiento</label>
+                <br>
+                <br>
+                <select name="pais" id="pais" required>
+                    <option value="argentina">Argentina</option>
+                    <option value="brasil">Brasil</option>
+                    <option value="bolivia">Bolivia</option>
+                    <option value="chile">Chile</option>
+                    <option value="uruguay">Uruguay</option>
+                    <option value="otro">Otro</option>
+                </select>
+            </p>
+            <p>
+                <label for="genero" Class="tituloh3">Género</label>
+                <br>
+                <br>
+                <input id="genero" type="radio" name="genero" values="m"> Masculino
+                <input id="genero" type="radio" name="genero" values="f"> Femenino
+                <input id="genero" type="radio" name="genero" values="o"> Prefiero no decirlo
+            </p>
+            <p>
+                <label for="hobbie" Class="tituloh3">Hobbies</label>
+                <br>
+                <br>
+                <input id="hobbie" type="checkbox" name="hobbie" value="g"> Guitarra
+                <input id="hobbie" type="checkbox" name="hobbie" value="f"> Fútbol
+                <input id="hobbie" type="checkbox" name="hobbie" value="t"> Tenis
+                <input id="hobbie" type="checkbox" name="hobbie" value="p"> Programacion
+            </p>
+            <p>
+                <label for="comentario" Class="tituloh3">Dejános tus comentarios</label>
+                <br>
+                <br>
+                <textarea name="comentario" id="comentario" cols="40" rows="7"></textarea>
+            </p>
+            <p>
+                <input id="acepto" type="checkbox" name="acepto" value="a"> Acepto los términos y condiciones.
+            </p>
+            <p>
+                <label for="">Botón enviar con etiqueta "input"</label>
+                <br>
+                <br>
+                <input type="submit" value="Registrarme">
+                <input type="reset" value="Cancelar">
+                <br>
+                <br>
+            </p>
+
+            <p>
+                <label for="">Botón enviar con etiqueta "button"</label>
+                <br>
+                <br>
+                <button type="submit" name="button" class="button">
+                    Registrarme
+                </button>
+                <button type="reset" name="button" class="button">
+                    Cancelar
+                </button>
+            </p>
+
+        </form>
+
+    </div>
+</body>
+
+</html>

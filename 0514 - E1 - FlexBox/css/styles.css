@@ -1,0 +1,129 @@
+* {
+    box-sizing: border-box;
+}
+
+body{
+    font-family: 'Raleway', sans-serif;
+    background-image: url("../images/bg-body.png");
+    border: 1px solid gray;
+    padding: 10px;
+}
+
+.card{
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-around;
+    background: rgba(255, 255, 255, 0.8);
+    padding: 20px;
+    border-radius: 10px;
+    margin: 20px 0;
+}
+
+.card:first-child{
+    margin-top: 0;
+}
+
+.card:last-child{
+    margin-bottom: 0;
+}
+
+.card-image img{
+    display: block;
+    margin: 10px auto;
+    width: 100%;
+    border-radius: 50%;
+}
+
+.social-media{
+    margin: 0 auto;
+    list-style-type: none;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 0;
+}
+
+.fab {
+    color: white;
+    font-size: 15px;
+    background-color: #3863FD;
+    border: 6px solid #3863FD;
+    border-radius: 50%;
+}   
+
+.fa-facebook{
+    color: #3863FD;
+    background-color: white;
+}
+
+.card-data a {
+    background-color: rgb(165, 165, 165);
+    display: flex;
+    width: 100px;
+    height: 30px;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
+    color: white;
+    font: bold;
+}
+
+@media (min-width:375px) and (max-width:700px) {
+    
+    .container {
+        display: flex;
+        flex-flow: row wrap;
+    }
+    .card{
+        width: 45%;
+        margin: 10px;
+    }
+    .card:first-child{
+        margin-top: 10px;
+    }
+    
+    .card:last-child{
+        margin-bottom: 10px;
+    }
+}
+
+
+@media (min-width:701px) {
+    
+    .container {
+        display: flex;
+        flex-flow: row wrap;
+        justify-content: center;
+    }
+    .card{
+        display: flex;
+        flex-flow: row wrap;
+        border-radius: 10px;
+        margin: 10px;
+        width: 40%;
+    }
+    
+    .card-image{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        width: 30%;
+        border-radius: 50%;
+    }
+    
+    .social-media{
+        margin: 0;
+        justify-content: space-around;
+    }
+
+
+    .card-data{
+        display: flex;
+        flex-direction: column;
+        width: 65%;
+    }
+
+
+
+
+}

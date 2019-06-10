@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="css/styles.css">
+    <title>Encuesta</title>
+</head>
+<body class="formulario">
+    <div>
+        <form action="index.html">
+            <p>
+                <label for="deDondeSos">¿De dónde sos?</label>
+                <br>
+                <br>
+                <select name="deDondeSos" id="deDondeSos" required> 
+                    <option value="Seleccione"> Seleccione un opcion ...</option>
+                    <option value="rosario">Rosario</option>
+                    <option value="buenosAires">Buenos Aires</option>
+                    <option value="cordoba">Cordoba</option>
+                    <option value="mendoza">Mendoza</option>
+                    <option value="otro">Otro</option>
+                </select>
+            </p>
+            <p>
+                <label for="iluminacion">¿Qué te pareció la iluminación?</label>
+                <br>
+                <br>
+                <input id="iluminacion" type="checkbox" name="iluminacion" value="a" checked> Muy acorde
+                <br>
+                <input id="iluminacion" type="checkbox" name="iluminacion" value="b"> Buena, pero podria mejorar
+                <br>
+                <input id="iluminacion" type="checkbox" name="iluminacion" value="m"> Mala
+                <br>
+            </p>
+            <p>
+                <label for="platoGusto">¿Qué tipo de plato fue el que más te gustó?</label>
+                <br>
+                <br>
+                <input id="platoGusto" type="checkbox" name="platoGusto" value="e"> Entrada
+                <br>
+                <input id="platoGusto" type="checkbox" name="platoGusto" value="pp"> Plato Principal
+                <br>
+                <input id="platoGusto" type="checkbox" name="platoGusto" value="p"> Postre
+                <br>
+                <input id="platoGusto" type="checkbox" name="platoGusto" value="o"> Otro
+                <br>
+            </p>
+            <p>
+                <label for="recomendacion">¿Recomendarías el lugar?</label>
+                <br>
+                <br>
+                <input id="recomendacion" type="radio" name="recomendacion" values="s" checked> Si
+                <input id="recomendacion" type="radio" name="recomendacion" values="n"> No
+            </p>
+            <p>
+                <label for="porque">¿Porqué?</label>
+                <br>
+                <textarea name="porque" id="porque" cols="60" rows="5"></textarea>
+
+            </p>
+            <p>
+                <label for="nombre">Nombre: </label>
+                <input id="nombre" type="text" name="nombre" placeholder="Ingrese su Nombre Aqui" required>
+            </p>
+            <p>
+                <label for="email">Email: </label>
+                <input id="email" type="email" name="email" placeholder="email" required>
+            </p>
+            <p>
+                <button type="submit" name="button">
+                    Enviar
+                </button>
+                <button typo="reset" name="button">
+                    Restablecer
+                </button>
+            </p>
+
+        </form>
+    </div>
+</body>
+
+</html>
